@@ -22,6 +22,7 @@ function cyrlat() {
     n = document.getElementById("cyr-text").value;
     document.getElementById("cnt").innerText=n.length;
     
+    n = n.replace(/ү/g, "ú");
     n = n.replace(/а/g, "a");
     n = n.replace(/б/g, "b");
     n = n.replace(/в/g, "v");
@@ -51,6 +52,7 @@ function cyrlat() {
     n = n.replace(/ы/g, "ı");
     n = n.replace(/э/g, "e");
     n = n.replace(/х/g, "x");
+    n = n.replace(/ҳ/g, "h");
     n = n.replace(/ю/g, "yu");
     n = n.replace(/я/g, "ya");
     n = n.replace(/ь/g, "'");
@@ -60,16 +62,19 @@ function cyrlat() {
     n = n.replace(/ҳ/g, "h");
     n = n.replace(/ә/g, "á");
     n = n.replace(/ў/g, "w");
-    n = n.replace(/ұ/g, "ú");
     n = n.replace(/ө/g, "ó");
     
+    n = n.replace(/Ч/g, "Ch");
+    n = n.replace(/Ш/g, "Sh");
+    n = n.replace(/Ю/g, "Yu");
+    n = n.replace(/Я/g, "Ya");
+    n = n.replace(/Ё/g, "Yo");
     n = n.replace(/А/g, "A");
     n = n.replace(/Б/g, "B");
     n = n.replace(/В/g, "V");
     n = n.replace(/Г/g, "G");
     n = n.replace(/Д/g, "D");
     n = n.replace(/Е/g, "E");
-    n = n.replace(/Ё/g, "Yo");
     n = n.replace(/Ж/g, "J");
     n = n.replace(/З/g, "Z");
     n = n.replace(/И/g, "I");
@@ -78,7 +83,7 @@ function cyrlat() {
     n = n.replace(/Л/g, "L");
     n = n.replace(/М/g, "M");
     n = n.replace(/Н/g, "N");
-    n = n.replace(/НГ/g, "Ń");
+    n = n.replace(/Ң/g, "Ń");
     n = n.replace(/О/g, "O");
     n = n.replace(/П/g, "P");
     n = n.replace(/Р/g, "R");
@@ -86,21 +91,18 @@ function cyrlat() {
     n = n.replace(/Т/g, "T");
     n = n.replace(/У/g, "U");
     n = n.replace(/Ф/g, "F");
-    n = n.replace(/Х/g, "H");
+    n = n.replace(/Х/g, "X");
+    n = n.replace(/Ҳ/g, "H");
     n = n.replace(/Ц/g, "C");
-    n = n.replace(/Ч/g, "Ch");
-    n = n.replace(/Ш/g, "Sh");
     n = n.replace(/Ы/g, "Í");
     n = n.replace(/Э/g, "E");
-    n = n.replace(/Ю/g, "Yu");
-    n = n.replace(/Я/g, "Ya");
     n = n.replace(/ў/g, "w");
     n = n.replace(/Ғ/g, "Ǵ");
     n = n.replace(/Қ/g, "Q");
     n = n.replace(/Ә/g, "Á");
     n = n.replace(/Ө/g, "Ó");
     n = n.replace(/Ў/g, "W");
-    n = n.replace(/Ұ/g, "Ú");
+    n = n.replace(/Ү/g, "Ú");
     document.getElementById("lat-text").value = n;
     }
  }
@@ -118,7 +120,7 @@ function cyrlat() {
     n = n.replace(/ya/g, "я");
     n = n.replace(/sh/g, "ш");
     n = n.replace(/yo/g, "ё");
-
+    n = n.replace(/ch/g, "ч");
     n = n.replace(/a/g, "а");
     n = n.replace(/b/g, "б");
     n = n.replace(/v/g, "в");
@@ -142,7 +144,7 @@ function cyrlat() {
     n = n.replace(/u/g, "у");
     n = n.replace(/f/g, "ф");
     n = n.replace(/c/g, "ц");
-    n = n.replace(/ch/g, "ч");
+    
     n = n.replace(/ı/g, "ы");
     n = n.replace(/e/g, "э");
     n = n.replace(/x/g, "х");  
@@ -169,7 +171,7 @@ function cyrlat() {
     n = n.replace(/L/g, "Л");
     n = n.replace(/M/g, "М");
     n = n.replace(/N/g, "Н");
-    n = n.replace(/Нг/g, "Ń");
+    n = n.replace(/Ń/g, "Ң");
     n = n.replace(/O/g, "О");
     n = n.replace(/P/g, "П");
     n = n.replace(/R/g, "Р");
@@ -179,10 +181,8 @@ function cyrlat() {
     n = n.replace(/F/g, "Ф");
     n = n.replace(/H/g, "Х");
     n = n.replace(/C/g, "Ц");
-    
     n = n.replace(/Í/g, "Ы");
     n = n.replace(/E/g, "Э");
-    
     n = n.replace(/Ǵ/g, "Ғ");
     n = n.replace(/Q/g, "Қ");
     n = n.replace(/Á/g, "Ә");
