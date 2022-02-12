@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Transliterator</title>
+</head>
+<body class="d-flex flex-column sticky-footer-wrapper min-vh-100">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.svg" alt="logo" height="24" class="d-inline-block align-text-top">
+            Qq-Ққ
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Klaviatura</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="transliterator.html">Transliterator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Baylanıs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container flex-fill">
+        <div style="margin-top:15px; margin-bottom: 15px;">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-dark" for="btnradio1">Кирилл-Latin</label>
+              
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-dark" for="btnradio2">Latin-Кирилл</label>
+          </div>
+        <div class="main">
+            <div class="left">
+                <p class="title" id="text">Tekstińizdi kiritiń! (Maksimal tekst uzınlıǵı 5000)</p>
+                <textarea class="form-control" name="cyrillicText" id="cyr-text" style="width: 100%;" rows="10" onKeyUp="cyrlat(); latcyr()" maxlength="5000"></textarea>
+                <div style="text-align: right;"><span id="cnt">0</span>/5000</div>
+                <button class="btn btn-danger" id="clear" onclick="clearText()"><i class="fa fa-trash"></i> Tazalaw</button>
+              </div>
+              <div class="right">
+                <p class="title">Nátiyje!</p>
+                <textarea class="form-control" name="latinText" id="lat-text" style="width: 100%;" rows="10" readonly></textarea>
+              <br>
+                <button class="btn btn-success" onclick="copyText()" data-bs-toggle="tooltip" data-bs-original-title="Nusqalandı!"><i class="fa fa-copy"></i> Nusxalaw</button>
+              </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">2021, Qaraqalpaqstan</span>
+        </div>
+    </footer>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/transliterator.js"></script>
+</html>
